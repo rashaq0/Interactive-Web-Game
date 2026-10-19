@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width">
+        <title>Match By Design</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+
+    <!-- Game statistics -->
+    <div class="game-stats">
+        <div class="stat">
+            <span class="stat-label">TIME LEFT</span>
+                <span id="timer">25</span>
+            </div>
+
+        <div class="stat">
+            <span class="stat-label">MATCHES</span>
+            <span id="matches">0/10</span>
+        </div>
+    </div>
+
+    <!-- Start screen -->
+    <div id="intro-screen">
+        <div class="intro-window">
+            <h1>Match by Design</h1>
+            <p>Match each design term with its meaning!</p>
+            <button id="start-button">Start Game</button>
+        </div>
+    </div>
+
+    <!-- Game screen -->
+    <div id="game-screen">
+
+        <h1>Match by Design</h1>
+        <p class="instructions">
+            Match each design term with its meaning!
+        </p>
+
+<!-- SET 1 -->
+<div class="game set-1">
+    <svg class="connections"></svg>
+
+    <div class="terms">
+        <div class="card term" data-match="typography">Typography</div>
+        <div class="card term" data-match="contrast">Contrast</div>
+        <div class="card term" data-match="balance">Balance</div>
+        <div class="card term" data-match="hierarchy">Hierarchy</div>
+        <div class="card term" data-match="grid">Grid</div>
+    </div>
+
+    <div class="definitions">
+        <div class="card definition" data-match="grid">A structure for organizing elements</div>
+        <div class="card definition" data-match="contrast">Difference between visual elements</div>
+        <div class="card definition" data-match="typography">The design and arrangement of type</div>
+        <div class="card definition" data-match="balance">Equal or intentional visual weight</div>
+        <div class="card definition" data-match="hierarchy">Shows what should be noticed first</div>
+    </div>
+</div>
+
+<!-- SET 2 -->
+<div class="game set-2" style="display: none;">
+    <svg class="connections"></svg>
+
+    <div class="terms">
+        <div class="card term" data-match="emphasis">Emphasis</div>
+        <div class="card term" data-match="proportion">Proportion</div>
+        <div class="card term" data-match="alignment">Alignment</div>
+        <div class="card term" data-match="repetition">Repetition</div>
+        <div class="card term" data-match="whitespace">White Space</div>
+    </div>
+
+    <div class="definitions">
+        <div class="card definition" data-match="whitespace">Empty space around design elements</div>
+        <div class="card definition" data-match="alignment">How elements line up with each other</div>
+        <div class="card definition" data-match="emphasis">Makes an element stand out</div>
+        <div class="card definition" data-match="repetition">Reusing elements to create consistency</div>
+        <div class="card definition" data-match="proportion">The size relationship between elements</div>
+    </div>
+</div>
+
+<!--END OF GAME POP-UP-->
+
+<div id="end-screen" style="display: none;">
+    <h2 id="end-message"></h2>
+    <button id="restart-button">Restart Game</button>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
